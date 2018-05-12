@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tvOutput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffbcbc"
+        android:text="Hello World!"
+        android:textAllCaps="true"
+        android:textColor="#3eaf97"
+        android:textSize="30sp"
+        android:textStyle="italic|bold" />
+
+    <EditText
+        android:id="@+id/etInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#c29d9d"
+        android:digits="0123456789.-"
+        android:gravity="center"
+        android:hint="Escribe algo"
+        android:inputType="numberSigned|numberDecimal"
+        android:maxLength="15"
+        android:text="Texto a mostrar"
+        android:textColor="#da2323"
+        android:textColorHint="#ff5500" />
+
+    <Button
+        android:id="@+id/btnAction"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#00ffe1"
+        android:text="Botón!"
+        android:textAllCaps="false"
+        android:textColor="#ff0000"
+        android:textSize="30sp" />
+
+</LinearLayout>
