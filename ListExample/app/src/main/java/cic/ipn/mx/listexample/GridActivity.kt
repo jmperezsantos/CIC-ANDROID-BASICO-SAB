@@ -3,27 +3,28 @@ package cic.ipn.mx.listexample
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
 import android.widget.Toast
-import cic.ipn.mx.listexample.adapter.UserListAdapter
+import cic.ipn.mx.listexample.adapter.UserGridAdapter
 import cic.ipn.mx.listexample.model.UserModel
-import kotlinx.android.synthetic.main.activity_main.*
+import kotlinx.android.synthetic.main.activity_grid.*
 
-class MainActivity : AppCompatActivity() {
+class GridActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+        setContentView(R.layout.activity_grid)
 
-        val users: List<UserModel> = getUsers(20)
 
-        val adapter = UserListAdapter(users)
+        val users: List<UserModel> = getUsers(51)
+        val adapter = UserGridAdapter(users)
+        this.gvCuadricula.adapter = adapter
 
-        this.lvUsuarios.adapter = adapter
-
-        this.lvUsuarios.setOnItemClickListener { parent, view, position, id ->
+        this.gvCuadricula.setOnItemClickListener {
+            parent, view, position, id ->
 
             Toast.makeText(this,
-                    "Presionó ${position}",
-                    Toast.LENGTH_LONG).show()
+                    "presionó ${position}",
+                    Toast.LENGTH_LONG
+            ).show()
 
         }
 
@@ -45,6 +46,4 @@ class MainActivity : AppCompatActivity() {
 
         return users
     }
-
-
 }
