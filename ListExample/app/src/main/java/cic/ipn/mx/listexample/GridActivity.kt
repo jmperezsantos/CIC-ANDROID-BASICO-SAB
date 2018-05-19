@@ -13,7 +13,6 @@ class GridActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_grid)
 
-
         val users: List<UserModel> = getUsers(51)
         val adapter = UserGridAdapter(users)
         this.gvCuadricula.adapter = adapter
