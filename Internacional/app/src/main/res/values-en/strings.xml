@@ -1,0 +1,12 @@
+<resources>
+
+    <string name="app_name">International</string>
+    <string name="title">Hello World!</string>
+    <string name="placeholder">Write Something:</string>
+    <string name="button_title">Press!</string>
+    <string name="alert_message">This is a message</string>
+    <string name="alert_title">This is a title</string>
+    <string name="alert_yes_button">Yes</string>
+    <string name="alert_no_button">Cancel</string>
+
+</resources>

@@ -1,0 +1,12 @@
+<resources>
+
+    <string name="app_name">Internacional</string>
+    <string name="title">Hola Mundo!</string>
+    <string name="placeholder">Escribe algo:</string>
+    <string name="button_title">Presiona!</string>
+    <string name="alert_message">Este es un mensaje</string>
+    <string name="alert_title">Este es un Título</string>
+    <string name="alert_yes_button">Sí</string>
+    <string name="alert_no_button">Cancelar</string>
+
+</resources>
